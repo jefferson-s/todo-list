@@ -54,7 +54,7 @@ useEffect(() => {
         onChange={(e) => setInput(e.target.value)}
         placeholder="Nova tarefa"
       />
-      <button onClick={addTask}>Adicionar</button>
+      <button className="buttonadd" onClick={addTask}>Adicionar</button>
       <ul>
         {tasks.map((task, index) => (
           <li key={index} className="todo-item">
@@ -64,7 +64,7 @@ useEffect(() => {
             >
               {task.text}
             </span>
-            <button onClick={() => removeTask(index)}>Remover</button>
+            <button className="buttonremove" onClick={() => removeTask(index)}>Remover</button>
           </li>
         ))}
       </ul>

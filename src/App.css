@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
+  justify-content: justify;
+  gap: 100px;
 }
 
 .todo-item {
@@ -16,4 +18,26 @@
 
 span {
   margin-right: 9px;
+}
+
+.buttonremove {
+  position: flex;
+  margin-right: 100px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #000000a2;
+  color: white;
+  cursor: pointer;
+}
+.buttonremove:hover {
+  background-color: #ff4d4d;
+}
+
+.buttonadd {
+  background-color: #000000;
+  color: white;
+}
+.buttonadd:hover {
+  background-color: #15ff00;
+  color: black
 }
